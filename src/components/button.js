@@ -19,7 +19,7 @@ class CustomButton extends Component {
                 <TouchableNativeFeedback onPress={() => this.props.onPress()}>
                     <View
                         style={{
-                            backgroundColor: COLOR.BUTTON_BACKGROUND,
+                            backgroundColor: COLOR.PANTOME,
                             height: 40,
                             justifyContent: "center",
                             alignItems: "center"
@@ -27,7 +27,7 @@ class CustomButton extends Component {
                     >
                         <Text
                             style={{
-                                color: COLOR.BUTTON_TEXT,
+                                color: COLOR.LIGHT,
                                 fontWeight: "bold",
                                 fontSize: 16
                             }}
@@ -41,7 +41,7 @@ class CustomButton extends Component {
             return (
                 <TouchableOpacity
                     style={{
-                        backgroundColor: COLOR.BUTTON_BACKGROUND,
+                        backgroundColor: COLOR.PANTOME,
                         alignSelf: "stretch",
                         height: 40,
                         justifyContent: "center",
@@ -51,7 +51,7 @@ class CustomButton extends Component {
                 >
                     <Text
                         style={{
-                            color: COLOR.BUTTON_TEXT,
+                            color: COLOR.LIGHT,
                             fontWeight: "bold",
                             fontSize: 16
                         }}

@@ -17,10 +17,10 @@ import { connect } from "react-redux";
 class Home extends Component {
     static navigationOptions = ({ navigation }) => ({
         title: "Home",
-        headerTintColor: COLOR.HEADER_TINT,
+        headerTintColor: COLOR.LIGHT,
         headerStyle: {
             borderBottomWidth: 0,
-            backgroundColor: COLOR.HEADER_BACKGROUND
+            backgroundColor: COLOR.PANTOME
         }
     }); // navigationOptions
 
@@ -28,7 +28,7 @@ class Home extends Component {
         return (
             <View style={[Styles.container, { padding: 0, paddingHorizontal: 16 }]}>
                 <StatusBar
-                    backgroundColor={COLOR.STATUS_BAR}
+                    backgroundColor={COLOR.DARK}
                     barStyle="light-content"
                 />
 
@@ -50,11 +50,11 @@ class Home extends Component {
                             alignItems: "center"
                         }}
                     >
-                        <Icon name="home" size={128} color={COLOR.BACKGROUND} />
+                        <Icon name="home" size={128} color={COLOR.LIGHT_GRAY} />
                     </View>
                     <Text
                         style={{
-                            color: COLOR.CONTENT_TEXT,
+                            color: COLOR.LIGHT,
                             margin: 8,
                             fontSize: 20,
                             marginTop: 16

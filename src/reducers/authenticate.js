@@ -27,7 +27,6 @@ import {
       case LOGIN_REQUEST: // When a login request action has been dispatched
         return { // See more on actions/authenticate.js on line 19 - 38
           ...state,
-          authError: "",
           requestingAuth: true
         };
       case LOGIN_SUCCESS: // When a Login success action has been dispatched

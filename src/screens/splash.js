@@ -6,11 +6,11 @@ const Splash = () => (
     <View
         style={[
             Styles.container,
-            { justifyContent: "center", alignItems: "center" }
+            { justifyContent: "center", alignItems: "center", backgroundColor: COLOR.DARK }
         ]}
     >
-        <StatusBar backgroundColor={COLOR.STATUS_BAR} barStyle="light-content" />
-        <Text style={{ color: COLOR.TEXT, fontSize: 36, fontWeight: "bold" }}>
+        <StatusBar backgroundColor={COLOR.DARK} barStyle="light-content" />
+        <Text style={{ color: COLOR.PANTOME, fontSize: 36, fontWeight: "bold" }}>
             React Native Redux with React Navigation v2 boiler plate
     </Text>
     </View>

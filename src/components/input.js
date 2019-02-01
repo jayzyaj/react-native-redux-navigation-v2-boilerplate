@@ -12,7 +12,7 @@ class CustomInput extends Component {
         return (
             <View
                 style={{
-                    backgroundColor: COLOR.INPUT_BACKGROUND,
+                    backgroundColor: COLOR.LIGHT_GRAY,
                     alignItems: "center",
                     height: 40,
                     flexDirection: "row"
@@ -27,19 +27,19 @@ class CustomInput extends Component {
                         marginHorizontal: 8,
                         borderWidth: 1,
                         borderRadius: 16,
-                        borderColor: COLOR.ICON
+                        borderColor: COLOR.PANTOME
                     }}
                 >
-                    <Icon name={this.props.icon} size={24} color={COLOR.ICON} />
+                    <Icon name={this.props.icon} size={24} color={COLOR.PANTOME} />
                 </View>
                 <TextInput
                     style={{
-                        color: COLOR.INPUT_TEXT,
+                        color: COLOR.BLACK,
                         height: 40,
                         marginHorizontal: 8,
                         flex: 1
                     }}
-                    placeholderTextColor={COLOR.INPUT_PLACEHOLDER}
+                    placeholderTextColor={COLOR.GRAY}
                     value={this.props.value}
                     placeholder={this.props.placeholder || ""}
                     secureTextEntry={this.props.secureTextEntry}
