@@ -3,6 +3,7 @@ import {
     createDrawerNavigator
 } from "react-navigation";
 
+import { COLOR } from './styles'
 
 import Home from "../screens/home";
 import Login from "../screens/login";
@@ -14,7 +15,7 @@ export const MainStack = createDrawerNavigator({
 }, {
         contentComponent: DrawerComponent,
         contentOptions: {
-            activeTintColor: 'green'
+            activeTintColor: COLOR.PANTOME
         }
     });
 
