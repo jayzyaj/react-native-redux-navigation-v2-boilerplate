@@ -3,9 +3,13 @@ import { SafeAreaView, ScrollView, View, Image } from 'react-native';
 import { DrawerItems } from "react-navigation";
 import CustomButton from '../components/button'
 
+import { bindActionCreators } from "redux";
+import * as authActions from "../actions/authenticate";
+import { connect } from "react-redux";
+
 class DrawerComponent extends Component {
     render() {
-        console.log(this.props)
+        console.log('HAHA', this.props)
         return (
             <SafeAreaView
                 style={{
@@ -29,9 +33,7 @@ class DrawerComponent extends Component {
                 <ScrollView>
                     <DrawerItems {...this.props} />
                     <CustomButton
-                        // onPress={() =>
-                        //     this.props.actions.login(this.state.email, this.state.password)
-                        // }
+                        onPress={this.props.actions.logout}
                         title={"LOG OUT"}
                     />
                 </ScrollView>
@@ -40,4 +42,8 @@ class DrawerComponent extends Component {
     }
 }
 
-export default DrawerComponent
+export default connect(
+    dispatch => ({
+        actions: bindActionCreators(authActions, dispatch)
+    })
+)(DrawerComponent);

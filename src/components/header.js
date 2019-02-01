@@ -5,7 +5,7 @@ import { COLOR } from "../config/styles";
 
 const DrawerHeader = props => {
     return (
-        <Header transparent androidStatusBarColor={COLOR.DARK}>
+        <Header transparent androidStatusBarColor={COLOR.DARK} style={{ backgroundColor: COLOR.PANTOME }}>
             <Left>
                 <Button transparent onPress={() => props.onPress()}>
                     <NativeIcon name={props.icon} />

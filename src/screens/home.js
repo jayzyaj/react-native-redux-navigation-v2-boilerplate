@@ -5,6 +5,7 @@ import { View, Text, StatusBar, ScrollView, Button } from "react-native";
 
 import CustomButton from "../components/button";
 import CustomLoading from "../components/loading";
+import DrawerHeader from '../components/header'
 
 import Styles, { COLOR } from "../config/styles";
 
@@ -27,11 +28,9 @@ class Home extends Component {
     render() {
         return (
             <View style={[Styles.container, { padding: 0, paddingHorizontal: 16 }]}>
-                <StatusBar
-                    backgroundColor={COLOR.DARK}
-                    barStyle="light-content"
-                />
-
+                <View style={{ position: "absolute", left: 0, right: 0, top: 0, width: '100%', zIndex: 100 }}>
+                    <DrawerHeader icon="menu" onPress={() => this.props.navigation.openDrawer()} />
+                </View>
                 <View
                     style={{
                         // flex: 1,
