@@ -27,6 +27,6 @@ react-native run-ios
 
 use the credentials below
 
-email: test123@nomail.com
+**email:** `test123@nomail.com`
 
-password: 123456
+**password:** `123456`
