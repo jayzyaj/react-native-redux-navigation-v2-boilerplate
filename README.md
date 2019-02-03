@@ -7,7 +7,7 @@ A React Native with Redux, Redux thunk, Redux logger, React Native Elements, Nat
 
 2. Go inside to the project directory that you have cloned and open the terminal or command line and run `npm -i` or `yarn install` to install all the package needed
 
-3. Link all the libraries and dependencies run `react-native link`
+3. To link all the libraries and dependencies run `react-native link`
 
 ### Run it on your Android or iOS device
 
