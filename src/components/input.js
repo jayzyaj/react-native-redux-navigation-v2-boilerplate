@@ -1,5 +1,3 @@
-/* @flow */
-
 import React, { Component } from "react";
 import Proptypes from "prop-types";
 import { View, TextInput } from "react-native";

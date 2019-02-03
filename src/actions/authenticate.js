@@ -1,8 +1,5 @@
-/* @flow */
-
 import { AsyncStorage } from "react-native";
 import { DATA_SESSION } from "../config/global";
-import _ from 'lodash';
 
 import {
   LOGIN_REQUEST,

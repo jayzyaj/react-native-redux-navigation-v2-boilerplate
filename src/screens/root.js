@@ -1,5 +1,3 @@
-/* @flow */
-
 import React, { Component } from "react";
 import { MainStack, LoginStack } from "../config/router";
 import Splash from "./splash";

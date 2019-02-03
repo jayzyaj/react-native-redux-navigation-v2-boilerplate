@@ -1,5 +1,3 @@
-/* @flow */
-
 import React, { Component } from "react";
 import { View, Text, StatusBar, ScrollView, Button } from "react-native";
 
@@ -29,7 +27,10 @@ class Home extends Component {
         return (
             <View style={[Styles.container, { padding: 0 }]}>
                 <View style={{ position: "absolute", left: 0, right: 0, top: 0, width: '100%', zIndex: 100 }}>
-                    <DrawerHeader icon="menu" onPress={() => this.props.navigation.openDrawer()} />
+                    <DrawerHeader
+                        headerTitle="Home"
+                        icon="menu"
+                        onPress={() => this.props.navigation.openDrawer()} />
                 </View>
                 <View
                     style={{
