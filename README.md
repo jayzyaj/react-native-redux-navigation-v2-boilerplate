@@ -5,7 +5,7 @@ A React Native with Redux, Redux thunk, Redux logger, React Native Elements, Nat
 
 1. Clone the project repository `https://github.com/jayzyaj/react-native-with-redux-react-navigation-v2-boilerplate`
 
-2. Go inside the project directory that you have cloned and open the terminal or command line and run `npm -i` or `yarn install` to install all the package needed
+2. Go inside to the project directory that you have cloned and open the terminal or command line and run `npm -i` or `yarn install` to install all the package needed
 
 3. Link all the libraries and dependencies run `react-native link`
 
