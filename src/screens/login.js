@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { View, Text, StatusBar } from "react-native";
+import { View, Text, StatusBar, TouchableWithoutFeedback, Keyboard } from "react-native";
 import { Card } from 'react-native-elements'
+
 import CustomButton from "../components/button";
 import CustomInput from "../components/input";
 import CustomLoading from "../components/loading";
@@ -51,40 +52,45 @@ class Login extends Component {
     render() {
         return (
             <View style={Styles.container}>
-                <StatusBar
-                    backgroundColor={COLOR.DARK}
-                    barStyle="light-content"
-                />
-                <Card>
-                    {this.renderError(this.props.state.authError)}
+                <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+                    <View>
+                        <StatusBar
+                            backgroundColor={COLOR.DARK}
+                            barStyle="light-content"
+                        />
+                        <Card>
+                            {this.renderError(this.props.state.authError)}
 
-                    <View style={{ height: 8 }} />
+                            <View style={{ height: 8 }} />
 
-                    <CustomInput
-                        icon="envelope"
-                        value={this.state.email}
-                        placeholder="Email"
-                        onChangeText={v => this.setState({ email: v })}
-                    />
-                    <View style={{ height: 8 }} />
-                    <CustomInput
-                        icon="lock"
-                        value={this.state.password}
-                        placeholder="Password"
-                        secureTextEntry={true}
-                        onChangeText={v => this.setState({ password: v })}
-                    />
-                    <View style={{ height: 16 }} />
-                    <CustomButton
-                        onPress={() =>
-                            this.props.actions.login(this.state.email, this.state.password)
-                        }
-                        title={"SIGN IN"}
-                    />
-                </Card>
-                <View>
-                    <CustomLoading loading={this.props.state.requestingAuth} />
-                </View>
+                            <CustomInput
+                                icon="envelope"
+                                value={this.state.email}
+                                placeholder="Email"
+                                onChangeText={v => this.setState({ email: v })}
+                            />
+                            <View style={{ height: 8 }} />
+                            <CustomInput
+                                icon="lock"
+                                value={this.state.password}
+                                placeholder="Password"
+                                secureTextEntry={true}
+                                onChangeText={v => this.setState({ password: v })}
+                            />
+                            <View style={{ height: 16 }} />
+                            <CustomButton
+                                onPress={() =>
+                                    this.props.actions.login(this.state.email, this.state.password)
+                                }
+                                title={"SIGN IN"}
+                            />
+                        </Card>
+                        <View>
+                            <CustomLoading loading={this.props.state.requestingAuth} />
+                        </View>
+                    </View>
+
+                </TouchableWithoutFeedback>
             </View>
         );
     }
