@@ -9,7 +9,6 @@ import { connect } from "react-redux";
 
 class DrawerComponent extends Component {
     render() {
-        console.log('HAHA', this.props)
         return (
             <SafeAreaView
                 style={{
@@ -43,6 +42,7 @@ class DrawerComponent extends Component {
 }
 
 export default connect(
+    state => ({ state: state.authenticate }),
     dispatch => ({
         actions: bindActionCreators(authActions, dispatch)
     })

@@ -13,11 +13,12 @@ import DrawerComponent from "../components/drawer"
 export const MainStack = createDrawerNavigator({
     Home: Home,
 }, {
+        initialRouteName: 'Home',
         contentComponent: DrawerComponent,
         contentOptions: {
             activeTintColor: COLOR.PANTOME
         }
-    });
+});
 
 export const LoginStack = createStackNavigator({
     Login: {
