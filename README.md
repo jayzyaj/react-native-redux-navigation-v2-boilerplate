@@ -1,5 +1,19 @@
 The project was bootstrapped with <a href="https://facebook.github.io/react-native/docs/getting-started" target="_blank">react-native init</a>
 
+**List of used other libraries aside from react-native**
+
+1. For state management:
+   - [Redux](https://github.com/reduxjs/redux)
+   - [React Redux](https://github.com/reduxjs/react-redux)
+   - [Redux Thunk](https://github.com/reduxjs/redux-thunk)
+   - [Redux logger](https://github.com/LogRocket/redux-logger)
+2. For UI components:
+   - [React Native Elements](https://github.com/react-native-training/react-native-elements)
+   - [NativeBase](https://github.com/GeekyAnts/NativeBase)
+   - [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
+3. For navigation:
+   - [React Navigation v2](https://reactnavigation.org/blog/2018/05/07/react-navigation-2.0.html)
+
 ### Installation
 
 1. Clone the project repository `https://github.com/jayzyaj/react-native-with-redux-react-navigation-v2-boilerplate`
