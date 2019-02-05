@@ -9,7 +9,7 @@ A React Native with Redux, Redux thunk, Redux logger, React Native Elements, Nat
 
 3. To link all the libraries and dependencies run `react-native link`
 
-### Run it on your Android or iOS device
+### Usage
 
 If you are using android run the command below
 
@@ -23,7 +23,7 @@ and if you are using iOS
 react-native run-ios
 ```
 
-### In order to be authenticated or to sign in
+In order to be authenticated or to sign in
 
 use the credentials below
 
