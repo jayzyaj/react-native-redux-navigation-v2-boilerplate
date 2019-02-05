@@ -14,23 +14,24 @@ import * as authActions from "../actions/authenticate";
 import { connect } from "react-redux";
 
 class Home extends Component {
-    static navigationOptions = ({ navigation }) => ({
-        title: "Home",
-        headerTintColor: COLOR.LIGHT,
-        headerStyle: {
-            borderBottomWidth: 0,
-            backgroundColor: COLOR.PANTOME
-        }
-    }); // navigationOptions
+    // static navigationOptions = ({ navigation }) => ({
+    //     title: "Home",
+    //     headerTintColor: COLOR.LIGHT,
+    //     headerStyle: {
+    //         borderBottomWidth: 0,
+    //         backgroundColor: COLOR.PANTOME
+    //     }
+    // }); // navigationOptions
 
     render() {
         return (
             <View style={[Styles.container, { padding: 0 }]}>
-                <View style={{ position: "absolute", left: 0, right: 0, top: 0, width: '100%', zIndex: 100 }}>
+                <View style={Styles.header}>
                     <DrawerHeader
                         headerTitle="Home"
                         icon="menu"
-                        onPress={() => this.props.navigation.openDrawer()} />
+                        onPress={() => this.props.navigation.openDrawer()}
+                    />
                 </View>
                 <View
                     style={{

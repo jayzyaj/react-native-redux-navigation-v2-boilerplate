@@ -7,15 +7,15 @@ const DrawerHeader = props => {
     return (
         <View>
             <Header transparent androidStatusBarColor={COLOR.DARK} style={{ backgroundColor: COLOR.PANTOME }}>
-                <Left style={{ flex: 1 }}>
+                <Left>
                     <Button transparent onPress={() => props.onPress()}>
                         <NativeIcon name={props.icon} />
                     </Button>
                 </Left>
-                <Body style={{ flex: 1, alignItems: 'center' }}>
+                <Body>
                     <Title>{props.headerTitle}</Title>
                 </Body>
-                <Right style={{ flex: 1 }}>
+                <Right>
                 </Right>
             </Header>
         </View>
