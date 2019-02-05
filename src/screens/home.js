@@ -54,7 +54,7 @@ class Home extends Component {
                     </View>
                     <Text
                         style={{
-                            color: COLOR.LIGHT,
+                            color: COLOR.PANTOME,
                             margin: 8,
                             fontSize: 20,
                             marginTop: 16

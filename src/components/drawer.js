@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { SafeAreaView, ScrollView, View, Image } from 'react-native';
-import { DrawerItems } from "react-navigation";
+import { DrawerItems, DrawerActions } from "react-navigation";
 import CustomButton from '../components/button'
 
 import { bindActionCreators } from "redux";
@@ -30,7 +30,16 @@ class DrawerComponent extends Component {
                         }} />
                 </View>
                 <ScrollView>
-                    <DrawerItems {...this.props} />
+                    <DrawerItems
+                        {...this.props}
+                        onItemPress={({ route, focused }) => {
+                            if (focused) { // If pressed on the current active route just close the drawer
+                                this.props.navigation.dispatch(DrawerActions.closeDrawer());
+                            } else { // Otherwise navigate to the route or screen on press
+                                this.props.navigation.navigate(route.routeName);
+                            }
+                        }}
+                    />
                     <CustomButton
                         onPress={this.props.actions.logout}
                         title={"LOG OUT"}
