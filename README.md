@@ -1,6 +1,3 @@
-# react-native-with-redux-react-navigation-v2-boilerplate
-A React Native boiler plate for starting an application with authentication and navigation routes.
-
 The project was bootstrapped with <a href="https://facebook.github.io/react-native/docs/getting-started" target="_blank">react-native init</a>
 
 ### Installation
