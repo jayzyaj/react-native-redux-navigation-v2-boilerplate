@@ -23,9 +23,7 @@ and if you are using iOS
 react-native run-ios
 ```
 
-In order to be authenticated or to sign in
-
-use the credentials below
+In order to be authenticated or to sign in use the credentials below:
 
 **email:** `test123@nomail.com`
 
