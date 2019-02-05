@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { SafeAreaView, ScrollView, View, Image } from 'react-native';
+import { SafeAreaView, ScrollView, View, Image, Text } from 'react-native';
 import { DrawerItems, DrawerActions } from "react-navigation";
 import CustomButton from '../components/button'
 
@@ -16,7 +16,7 @@ class DrawerComponent extends Component {
                 }}>
                 <View
                     style={{
-                        height: 150,
+                        height: 170,
                         backgroundColor: 'white',
                         alignItems: 'center',
                         justifyContent: 'center'
@@ -24,10 +24,12 @@ class DrawerComponent extends Component {
                     <Image
                         source={{ uri: 'http://i.pravatar.cc/300' }}
                         style={{
+                            marginTop: 30,
                             height: 120,
                             width: 120,
                             borderRadius: 60
                         }} />
+                    <Text>{this.props.state.authSession.email || 'unknown@mail.com'}</Text>
                 </View>
                 <ScrollView>
                     <DrawerItems
