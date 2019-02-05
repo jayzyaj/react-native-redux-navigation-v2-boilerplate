@@ -1,4 +1,4 @@
-A React Native starter kit or boilerplate for starting a project with the help of **redux** for state management, **react-native elements** and **nativebase** for building the UI components and **react-navigation-v2** for the routing or navigation.
+A **React Native** starter kit or boilerplate for starting a project with the help of **redux** for state management, **react-native elements** and **nativebase** for building the UI components and **react-navigation-v2** for the routing or navigation.
 
 The project was bootstrapped with <a href="https://facebook.github.io/react-native/docs/getting-started" target="_blank">react-native init</a>
 
