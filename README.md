@@ -2,7 +2,7 @@ A **React Native** starter kit or boilerplate for starting a project with the he
 
 The project was bootstrapped with <a href="https://facebook.github.io/react-native/docs/getting-started" target="_blank">react-native init</a>
 
-**List of used other libraries aside from react-native**
+**List of used other libraries used aside from react-native**
 
 1. For state management:
    - [Redux](https://github.com/reduxjs/redux)
