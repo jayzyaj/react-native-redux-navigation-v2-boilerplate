@@ -22,7 +22,7 @@ and if you are using iOS
 ```
 react-native run-ios
 ```
-When you run the app it will show you a **SplashScreen** and it will dispatch a action to restore a session. If a session exist in the storage it will dispatch another action to authenticate the user and redirect it to the **MainStack** or the DrawerNavigator which is the **Authenticated route or stack**. Otherwise if a session session does not exist it will return the **LoginScreen** or the StackNavigator which is the **Unauthenticated route or stack**.
+When you run the app it will show you a **SplashScreen** and it will dispatch a action to restore a session. If a session exist in the storage it will dispatch another action to authenticate the user and redirect it to the **HomeScreen** or the DrawerNavigator which is the authenticated route or stack. Otherwise if a session session does not exist it will return the **LoginScreen** or the StackNavigator which is the Unauthenticated route or stack.
 
 In order to navigate to the **HomeScreen** you need to be authenticated or to sign in. Use the credentials below to sign in:
 
