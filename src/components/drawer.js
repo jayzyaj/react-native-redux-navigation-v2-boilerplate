@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { SafeAreaView, ScrollView, View, Image, Text } from 'react-native';
 import { DrawerItems, DrawerActions } from "react-navigation";
 import CustomButton from '../components/button'
+import CustomLoading from '../components/loading'
 
 import { bindActionCreators } from "redux";
 import * as authActions from "../actions/authenticate";
@@ -43,7 +44,10 @@ class DrawerComponent extends Component {
                         }}
                     />
                     <CustomButton
-                        onPress={this.props.actions.logout}
+                        onPress={() => {
+                            this.props.navigation.dispatch(DrawerActions.closeDrawer());
+                            this.props.actions.logout()
+                        }}
                         title={"LOG OUT"}
                     />
                 </ScrollView>

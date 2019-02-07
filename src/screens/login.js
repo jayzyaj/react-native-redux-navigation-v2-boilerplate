@@ -85,12 +85,11 @@ class Login extends Component {
                                 title={"SIGN IN"}
                             />
                         </Card>
-                        <View>
-                            <CustomLoading loading={this.props.state.requestingAuth} />
-                        </View>
                     </View>
-
                 </TouchableWithoutFeedback>
+                {/* <View> */}
+                    <CustomLoading loading={this.props.state.requestingAuth} />
+                {/* </View> */}
             </View>
         );
     }
