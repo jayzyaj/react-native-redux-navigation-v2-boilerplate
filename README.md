@@ -1,3 +1,5 @@
+**NOTE:** If you want to use the [react-navigation-v3](https://reactnavigation.org/docs/en/getting-started.html) you should use this one: [react-native-redux-navigation-v3-boilerplate](https://github.com/jayzyaj/react-native-redux-navigation-v3-boilerplate)
+
 A **React Native** starter kit or boilerplate for starting a project with the help of **redux** for state management, **react-native elements** and **nativebase** for building the UI components and **react-navigation-v2** for the routing or navigation.
 
 The project was bootstrapped with <a href="https://facebook.github.io/react-native/docs/getting-started" target="_blank">react-native init</a>
